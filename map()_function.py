@@ -4,3 +4,17 @@
 # Syntax: map(fun, iter)
   # fun : It is a function to which map passes each element of given iterable.
   # iter : It is a iterable which is to be mapped.
+  
+# Write a function to get the square of each item in a list
+
+#Method 1: Without using map()
+lst = [1, 2, 3, 4, 5]
+result =[]
+for i in lst:
+  result.append(i*i)
+print(result)
+  
+#Method 2: Using map()
+lst = [1, 2, 3, 4, 5]
+result = map(lambda x : x*x, lst) # map() is used to iterate through each item of list
+print(list(result))

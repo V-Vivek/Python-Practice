@@ -21,6 +21,8 @@ result = map(lambda x : x*x, lst) # map() is used to iterate through each item o
 print(list(result))
 # ==================================================================================================
 
+# map() can take any number of iterables as inputs.
+
 # ==================================================================================================
 # Problem 2: Write a function to add sequential elements of two lists
 #Method 1: Without using map()

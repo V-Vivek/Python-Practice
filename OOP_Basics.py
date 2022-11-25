@@ -11,10 +11,10 @@ class Employee:
 	
     # Constructor of class. It is mainly used for assignment of instance variables.
 	def __init__(self, name, salary ):
-	# Instance variable or Instance attributes
-	self.emp_name = name
-	self.emp_salary = salary
-	Employee.empCount += 1  # Incrementing a class attribute for each class object creation
+		# Instance variable or Instance attributes
+		self.emp_name = name
+		self.emp_salary = salary
+		Employee.empCount += 1  # Incrementing a class attribute for each class object creation
 		
 	# Method of a class - To print instance variables
 	def displayEmployeeInfo(self):
@@ -35,6 +35,34 @@ emp1.displayEmployeeCount()
 emp2.displayEmployeeInfo()
 emp2.displayEmployeeCount()
 
-# Individually accessing & printing the instance variables
+# Accessing & printing the instance variables
 print(emp1.emp_name)
 print(emp2.emp_name)
+
+# ==================================================================================================================================================================
+# Accessing & printing the Class variable
+
+# Using class name
+print(Employee.empCount) 
+
+# Using object
+print(emp1.empCount)
+print(emp2.empCount)
+# ==================================================================================================================================================================
+
+# ==================================================================================================================================================================
+# Updating Class variable
+
+# Using class name
+Employee.empCount = 10
+
+# Using object
+emp1.empCount = 20
+
+# Note that separate instance of empCount has been ctreated for emp1 object, but for emp2 as there is no instance of empCount it uses the value from Class variable
+print(emp1.empCount) # Output -> 20
+print(emp2.empCount) # Output -> 10
+
+# Note that Class varibale value is not changed and has no effect of "emp1.empCount = 20" on it.
+print(Employee.empCount) # Output -> 10
+# ==================================================================================================================================================================

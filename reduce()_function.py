@@ -8,7 +8,7 @@
   # initializer : It is an optional argument used to provide the default value to reduce()
   
 # Working :
-# At first step, first two elements of iterable argument are picked & intermediaye result is calculated.
+# At first step, first two elements of iterable argument are picked & intermediate result is calculated.
 # In next step it operates on next element of the iterable argument & intermediate result.
 # This process continues till no more elements are left in the container.
 # The final result is returned to caller object.
